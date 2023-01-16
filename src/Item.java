@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.util.ArrayList;
 
-public abstract class Item {
+public abstract class Item implements Component{
 
     private Point position;
 

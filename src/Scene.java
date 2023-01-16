@@ -6,7 +6,7 @@ public class Scene extends Frame{
     private int width;
     private int height;
 
-    private ArrayList<Item> items;
+    private ArrayList<Component> items;
 
     public Scene(int width, int height)
     {
@@ -17,7 +17,7 @@ public class Scene extends Frame{
         addWindowListener(new WindowAdapter(){public void windowClosing(WindowEvent we) {System.exit(0);}});
     }
 
-    public void addItem(Item item){
+    public void addItem(Component item){
         item.setGraphics(this.getGraphics());
         items.add(item);
     }
@@ -34,3 +34,4 @@ public class Scene extends Frame{
         draw();
     }
 }
+
